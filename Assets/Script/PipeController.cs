@@ -47,9 +47,18 @@ public class PipeController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collider.gameObject.name == "Fuel Tank")
+        if (collision.gameObject.name == "Fuel Tank")
         {
             indicator.GetComponent<SpriteRenderer>().color=Color.green;
+            LevelManager.Indicators[2] = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Fuel Tank")
+        {
+            indicator.GetComponent<SpriteRenderer>().color = Color.red;
+            LevelManager.Indicators[2] = false;
         }
     }
 }

@@ -26,5 +26,6 @@ public class WingEngine : MonoBehaviour
     public void Fire2()
     {
         rotation = new Vector3(0, 0, 300);
+        LevelManager.Indicators[5] = true;
     }
 }

@@ -6,7 +6,8 @@ public class LevelManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public int holdRecord;
-    void Awake()
+    public static bool[] Indicators = { false, false, false, false, false, false };
+    void Start()
     {
         holdRecord = 0;
     }

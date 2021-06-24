@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TailController : MonoBehaviour
+public class BatteryController : MonoBehaviour
 {
     // Start is called before the first frame update
     bool canMove;
@@ -47,21 +47,26 @@ public class TailController : MonoBehaviour
         }
         if (mainCamera.GetComponent<LevelManager>().holdRecord == 2)
         {
-            LevelManager.Indicators[4] = true;
+            LevelManager.Indicators[0] = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Place")
         {
-            mainCamera.GetComponent<LevelManager>().holdRecord++;
+            if (collision.gameObject.GetComponent<BoxCollider2D>().autoTiling == GetComponent<BoxCollider2D>().autoTiling) {
+                mainCamera.GetComponent<LevelManager>().holdRecord++;
+            }   
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Place")
         {
-            mainCamera.GetComponent<LevelManager>().holdRecord--;
+            if (collision.gameObject.GetComponent<BoxCollider2D>().autoTiling == GetComponent<BoxCollider2D>().autoTiling)
+            {
+                mainCamera.GetComponent<LevelManager>().holdRecord--;
+            }
         }
     }
 }

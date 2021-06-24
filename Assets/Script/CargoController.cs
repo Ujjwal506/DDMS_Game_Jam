@@ -19,7 +19,6 @@ public class CargoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(mainCamera.GetComponent<LevelManager>().holdRecord);
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0))
@@ -47,13 +46,20 @@ public class CargoController : MonoBehaviour
             dragging = false;
         }
         if (mainCamera.GetComponent<LevelManager>().holdRecord == 4) {
-            Debug.Log("All Clear");
+            LevelManager.Indicators[1] = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collider.gameObject.tag == "Place") {
-            mainCamera.GetComponent<LevelManager>().holdRecord++;
+        if (collision.gameObject.tag == "Place") {
+            mainCamera.GetComponent<LevelManager>().holdRecord++;          
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Place")
+        {
+            mainCamera.GetComponent<LevelManager>().holdRecord--;
         }
     }
 }

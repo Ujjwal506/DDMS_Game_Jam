@@ -7,18 +7,26 @@ public class Interact : MonoBehaviour
 {
     public Button[] CircleButtons;
     public Slider[] Sliders;
-    bool allClear = false;
+    //bool allClear = false;
     public GameObject Panel, Black;
     public Text ObjectiveText;
     // Start is called before the first frame update
-   
-
+    void Start()
+    {
+        for (int i = 0; i < LevelManager.Indicators.Length; i++) {
+            if (LevelManager.Indicators[i] == true) {
+                CircleButtons[i].image.color = Color.green;
+            }
+            else
+                CircleButtons[i].image.color = Color.red;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if (Sliders[0].value == 100 && Sliders[1].value == 100 && Sliders[2].value == 100 && Sliders[3].value == 100 && Sliders[4].value == 100) {
+        /*if (Sliders[0].value == 100 && Sliders[1].value == 100 && Sliders[2].value == 100 && Sliders[3].value == 100 && Sliders[4].value == 100) {
             allClear = true;
-        }
+        }*/
     }
 
     public void CircleButton0() {
@@ -62,9 +70,7 @@ public class Interact : MonoBehaviour
             Panel.SetActive(true);
             Black.SetActive(true);
             ObjectiveText.text = "Back";
-        }
-        
-        
+        }          
     }
     public void Cargo()
     {
@@ -94,6 +100,4 @@ public class Interact : MonoBehaviour
     {
         Application.LoadLevel(0);
     }
-
-
 }
