@@ -8,11 +8,10 @@ public class Interact : MonoBehaviour
     public Button[] CircleButtons;
     public Slider[] Sliders;
     bool allClear = false;
+    public GameObject Panel, Black;
+    public Text ObjectiveText;
     // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log(allClear);
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -48,6 +47,22 @@ public class Interact : MonoBehaviour
     public void CircleButton6()
     {
         CircleButtons[6].image.color = Color.green;
-        Debug.Log(allClear);
+       
+    }
+    public void Objective()
+    {
+        if (Panel.active == true)
+        {
+            Panel.SetActive(false);
+            Black.SetActive(false);
+            ObjectiveText.text = "Objective";
+        }
+        else
+        {
+            Panel.SetActive(true);
+            Black.SetActive(true);
+            ObjectiveText.text = "Back";
+        }
+        
     }
 }
