@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 1df2844d66448ab4fb8d7b46004a4f24
+guid: 07efcd219e35f374f81442c59ed6cfa0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2284450076253445295
-    second: CARGO_0
+      213: 968950863819977336
+    second: Plane_Parts_0
   - first:
-      213: 7844202574707065982
-    second: CARGO_1
+      213: -8648184734915056844
+    second: Plane_Parts_1
+  - first:
+      213: -5163881311287807191
+    second: Plane_Parts_2
+  - first:
+      213: 7292335914014471238
+    second: Plane_Parts_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,43 +103,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CARGO_0
+      name: Plane_Parts_0
       rect:
         serializedVersion: 2
-        x: 387
-        y: 591
-        width: 949
-        height: 489
+        x: 0
+        y: 1158
+        width: 2393
+        height: 1615
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fac5336ad3ff3bf10800000000000000
-      internalID: 2284450076253445295
+      spriteID: 8723cca4da7627d00800000000000000
+      internalID: 968950863819977336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CARGO_1
+      name: Plane_Parts_1
       rect:
         serializedVersion: 2
-        x: 389
-        y: 175
-        width: 949
-        height: 190
+        x: 3860
+        y: 1531
+        width: 3084
+        height: 1242
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e748e9b6ea43cdc60800000000000000
-      internalID: 7844202574707065982
+      spriteID: 43bae6bbdc97bf780800000000000000
+      internalID: -8648184734915056844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plane_Parts_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1574
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923796a8e453658b0800000000000000
+      internalID: -5163881311287807191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plane_Parts_3
+      rect:
+        serializedVersion: 2
+        x: 5335
+        y: 5
+        width: 1609
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644f7a990e4933560800000000000000
+      internalID: 7292335914014471238
       vertices: []
       indices: 
       edges: []
