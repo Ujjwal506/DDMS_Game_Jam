@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/WingEngine.unity
     guid: 976acccd9a6cf0f40827e23437977278
+  - enabled: 1
+    path: Assets/Scene/MainMenuScr.unity
+    guid: 67c3c7e46e77f6048b41b8b9340b8426
   m_configObjects: {}
