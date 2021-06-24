@@ -64,5 +64,36 @@ public class Interact : MonoBehaviour
             ObjectiveText.text = "Back";
         }
         
+        
     }
+    public void Cargo()
+    {
+        Application.LoadLevel(1);
+    }
+    public void EngineRoom()
+    {
+        Application.LoadLevel(6);
+    }
+    public void AlignWing()
+    {
+        Application.LoadLevel(5);
+    }
+    public void O2()
+    {
+        Application.LoadLevel(4);
+    }
+    public void FuelTank()
+    {
+        Application.LoadLevel(3);
+    }
+    public void Battery()
+    {
+        Application.LoadLevel(2);
+    }
+    public void Cockpit()
+    {
+        Application.LoadLevel(0);
+    }
+
+
 }
