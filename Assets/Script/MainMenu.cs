@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
     
     public void Play()
     {
-        Application.LoadLevel(0);
+        Application.LoadLevel(1);
     }
     public void Quit()
     {

@@ -74,30 +74,30 @@ public class Interact : MonoBehaviour
     }
     public void Cargo()
     {
-        Application.LoadLevel(1);
+        Application.LoadLevel(2);
     }
     public void EngineRoom()
     {
-        Application.LoadLevel(6);
+        Application.LoadLevel(7);
     }
     public void AlignWing()
     {
-        Application.LoadLevel(5);
+        Application.LoadLevel(6);
     }
     public void O2()
     {
-        Application.LoadLevel(4);
+        Application.LoadLevel(5);
     }
     public void FuelTank()
     {
-        Application.LoadLevel(3);
+        Application.LoadLevel(4);
     }
     public void Battery()
     {
-        Application.LoadLevel(2);
+        Application.LoadLevel(3);
     }
     public void Cockpit()
     {
-        Application.LoadLevel(0);
+        Application.LoadLevel(1);
     }
 }
