@@ -45,24 +45,24 @@ public class CargoController : MonoBehaviour
             canMove = false;
             dragging = false;
         }
-        if (mainCamera.GetComponent<LevelManager>().holdRecord == 4) {
-            if (LevelManager.Indicators[0] == true && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == true)
-            {
-                LevelManager.Indicators[1] = true;
-            }
-        }
+       // if (mainCamera.GetComponent<LevelManager>().holdRecord == 4) {
+          //  if (LevelManager.Indicators[0] == true && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == true)
+          //  {
+            //    LevelManager.Indicators[1] = true;
+           // }
+       // }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Place") {
-            mainCamera.GetComponent<LevelManager>().holdRecord++;          
+            //mainCamera.GetComponent<LevelManager>().holdRecord++;          
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Place")
         {
-            mainCamera.GetComponent<LevelManager>().holdRecord--;
+            //mainCamera.GetComponent<LevelManager>().holdRecord--;
         }
     }
 }

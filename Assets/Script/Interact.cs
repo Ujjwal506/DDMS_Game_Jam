@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Interact : MonoBehaviour
 {
@@ -83,30 +84,36 @@ public class Interact : MonoBehaviour
     }
     public void Cargo()
     {
-        Application.LoadLevel(2);
+        // SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void EngineRoom()
     {
-        Application.LoadLevel(7);
+        SceneManager.LoadScene(7);
+        
     }
     public void AlignWing()
     {
-        Application.LoadLevel(6);
+        SceneManager.LoadScene(6);
     }
     public void O2()
     {
-        Application.LoadLevel(5);
+        SceneManager.LoadScene(5);
     }
     public void FuelTank()
     {
-        Application.LoadLevel(4);
+        SceneManager.LoadScene(4);
     }
     public void Battery()
     {
-        Application.LoadLevel(3);
+        SceneManager.LoadScene(3);
     }
     public void Cockpit()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(1);
+    }
+    public void GoBack()
+    {
+        SceneManager.LoadScene(0);
     }
 }
