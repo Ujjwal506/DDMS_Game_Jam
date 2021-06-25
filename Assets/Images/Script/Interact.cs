@@ -8,8 +8,8 @@ public class Interact : MonoBehaviour
     public Button[] CircleButtons;
     public Slider[] Sliders;
     //bool allClear = false;
-    public GameObject Panel, Black, Fly;
-    public Text ObjectiveText;
+    public GameObject Panel, Black,Quit;
+    public Text ObjectiveText, Fly;
     public AudioSource rumble;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class Interact : MonoBehaviour
         if (LevelManager.Indicators[0] == true && LevelManager.Indicators[1] == true && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == true)
         {
             CircleButtons[6].image.color = Color.green;
-            Fly.SetActive(true);
+            Fly.text = "      Take  Off";
         }
     }
     // Update is called once per frame
@@ -63,6 +63,7 @@ public class Interact : MonoBehaviour
         if (LevelManager.Indicators[0] == true && LevelManager.Indicators[1] == true && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == true)
         {
             rumble.Play();
+            Quit.SetActive(true);
         }
     }
     public void Objective()

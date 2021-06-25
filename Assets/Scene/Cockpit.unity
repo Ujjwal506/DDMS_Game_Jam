@@ -4128,8 +4128,9 @@ MonoBehaviour:
   - {fileID: 1876892446}
   Panel: {fileID: 1014618089}
   Black: {fileID: 581592158}
-  Fly: {fileID: 0}
+  Quit: {fileID: 0}
   ObjectiveText: {fileID: 1958437694}
+  Fly: {fileID: 0}
   rumble: {fileID: 1210130679}
 --- !u!82 &1210130679
 AudioSource:
@@ -6875,7 +6876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1958437693
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6928,7 +6929,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '      Take  Off'
+  m_Text: 
 --- !u!222 &1958437695
 CanvasRenderer:
   m_ObjectHideFlags: 0
