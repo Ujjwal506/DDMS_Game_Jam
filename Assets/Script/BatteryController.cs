@@ -47,7 +47,9 @@ public class BatteryController : MonoBehaviour
         }
         if (mainCamera.GetComponent<LevelManager>().holdRecord == 2)
         {
-            LevelManager.Indicators[0] = true;
+            if (LevelManager.Indicators[1] == false && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == false && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == false) {
+                LevelManager.Indicators[0] = true;
+            }           
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

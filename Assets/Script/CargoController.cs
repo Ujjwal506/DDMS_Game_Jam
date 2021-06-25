@@ -46,7 +46,10 @@ public class CargoController : MonoBehaviour
             dragging = false;
         }
         if (mainCamera.GetComponent<LevelManager>().holdRecord == 4) {
-            LevelManager.Indicators[1] = true;
+            if (LevelManager.Indicators[0] == true && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == true)
+            {
+                LevelManager.Indicators[1] = true;
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

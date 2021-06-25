@@ -16,7 +16,10 @@ public class GasControl : MonoBehaviour
     void Update()
     {
         if (o2.value == 100 && co2.value == 100) {
-            LevelManager.Indicators[3] = true;
+            if (LevelManager.Indicators[1] == false && LevelManager.Indicators[2] == true && LevelManager.Indicators[0] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == false)
+            {
+                LevelManager.Indicators[3] = true;
+            }
         }
     }
 }

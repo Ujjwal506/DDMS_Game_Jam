@@ -50,7 +50,10 @@ public class PipeController : MonoBehaviour
         if (collision.gameObject.name == "Fuel Tank")
         {
             indicator.GetComponent<SpriteRenderer>().color=Color.green;
-            LevelManager.Indicators[2] = true;
+            if (LevelManager.Indicators[1] == false && LevelManager.Indicators[0] == false && LevelManager.Indicators[3] == false && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == false)
+            {
+                LevelManager.Indicators[2] = true;
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
