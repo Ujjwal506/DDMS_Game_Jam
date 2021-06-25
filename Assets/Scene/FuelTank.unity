@@ -310,7 +310,6 @@ GameObject:
   - component: {fileID: 424481121}
   - component: {fileID: 424481120}
   - component: {fileID: 424481119}
-  - component: {fileID: 424481118}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -318,23 +317,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &424481118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424481117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ea571768b337e4ba46232bc64e9db5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CircleButtons: []
-  Sliders: []
-  Panel: {fileID: 0}
-  Black: {fileID: 0}
-  ObjectiveText: {fileID: 0}
 --- !u!114 &424481119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,10 +408,14 @@ PrefabInstance:
     - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 424481118}
+      objectReference: {fileID: 1660373423}
     - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Cockpit
+      objectReference: {fileID: 0}
+    - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 904833480017385225, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
       propertyPath: m_Pivot.x
@@ -619,6 +605,7 @@ GameObject:
   - component: {fileID: 1660373422}
   - component: {fileID: 1660373421}
   - component: {fileID: 1660373420}
+  - component: {fileID: 1660373423}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -691,6 +678,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660373423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660373419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ce00407bf032443b78bf48cad8d02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdRecord: 0
 --- !u!1 &1864787937
 GameObject:
   m_ObjectHideFlags: 0

@@ -1062,7 +1062,6 @@ GameObject:
   - component: {fileID: 1925833517}
   - component: {fileID: 1925833516}
   - component: {fileID: 1925833515}
-  - component: {fileID: 1925833514}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1070,23 +1069,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1925833514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925833513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ea571768b337e4ba46232bc64e9db5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CircleButtons: []
-  Sliders: []
-  Panel: {fileID: 0}
-  Black: {fileID: 0}
-  ObjectiveText: {fileID: 0}
 --- !u!114 &1925833515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,9 +1493,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 1925833518}
     m_Modifications:
     - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1925833514}
+      objectReference: {fileID: 1356248908}
+    - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Cockpit
+      objectReference: {fileID: 0}
+    - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 904833480017385224, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 904833480017385225, guid: 43083de1c29c5604b8e550760bc75446, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

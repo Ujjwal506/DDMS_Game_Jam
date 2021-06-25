@@ -116,4 +116,8 @@ public class Interact : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void MainMenu()
+    {
+        Application.LoadLevel(0);
+    }
 }

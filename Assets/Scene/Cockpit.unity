@@ -1843,7 +1843,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1210130678}
         m_TargetAssemblyTypeName: Interact, Assembly-CSharp
+<<<<<<< Updated upstream
         m_MethodName: GoBack
+=======
+        m_MethodName: MainMenu
+>>>>>>> Stashed changes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

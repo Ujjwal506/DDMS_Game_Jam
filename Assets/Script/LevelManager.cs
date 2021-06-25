@@ -17,4 +17,8 @@ public class LevelManager : MonoBehaviour
     {
         
     }
+    public void Cockpit()
+    {
+        Application.LoadLevel(1);
+    }
 }
