@@ -8,8 +8,9 @@ public class Interact : MonoBehaviour
     public Button[] CircleButtons;
     public Slider[] Sliders;
     //bool allClear = false;
-    public GameObject Panel, Black;
+    public GameObject Panel, Black, Fly;
     public Text ObjectiveText;
+    public AudioSource rumble;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,11 @@ public class Interact : MonoBehaviour
             else
                 CircleButtons[i].image.color = Color.red;
         }
+        if (LevelManager.Indicators[0] == true && LevelManager.Indicators[1] == true && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == true)
+        {
+            CircleButtons[6].image.color = Color.green;
+            Fly.SetActive(true);
+        }
     }
     // Update is called once per frame
     void Update()
@@ -29,7 +35,7 @@ public class Interact : MonoBehaviour
         }*/
     }
 
-    public void CircleButton0() {
+    /*public void CircleButton0() {
         CircleButtons[0].image.color = Color.green;       
     }
     public void CircleButton1()
@@ -51,11 +57,13 @@ public class Interact : MonoBehaviour
     public void CircleButton5()
     {
         CircleButtons[5].image.color = Color.green;
-    }
+    }*/
     public void CircleButton6()
     {
-        CircleButtons[6].image.color = Color.green;
-       
+        if (LevelManager.Indicators[0] == true && LevelManager.Indicators[1] == true && LevelManager.Indicators[2] == true && LevelManager.Indicators[3] == true && LevelManager.Indicators[4] == true && LevelManager.Indicators[5] == true)
+        {
+            rumble.Play();
+        }
     }
     public void Objective()
     {
